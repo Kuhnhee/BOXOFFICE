@@ -1,0 +1,63 @@
+body{
+    background-color:	#F8F8F8;
+  }
+  nav{
+    opacity:0.8;
+  }
+  footer{
+    opacity:0.9;
+  }
+  .noto-serif {
+    font-family: 'Noto Serif KR', serif;
+  }
+  .nanum-myeongjo {
+    font-family: 'Nanum Myeongjo', serif;
+  }
+  .collapse {
+    justify-content:flex-end;
+  }
+  header {
+    padding:100px;
+    height:350px;
+    display:flex;
+    justify-content:center;
+    background-image:url("/static/img/tickets1.jpg");
+    background-size:cover;
+  }
+  .title {
+    padding:10px;
+    font-weight:bold;
+    background-color:#ffffff;
+    opacity:0.75;
+    text-align: center;
+  }
+  footer {
+    height:50px;
+    line-height: 50px;
+  }
+  .flex-container{
+    display:flex;
+    justify-content:space-between;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-weight: bold;
+  }
+  .subtitle:after{
+    content:"";
+    display:block;
+    width:70px;
+    border-bottom: 3px solid rgb(156, 113, 33);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+  }
+  .score{
+    display:inline-block;
+    text-align: center;
+  }
+  .image {
+    cursor:pointer;
+  }
+  

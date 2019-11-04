@@ -1,0 +1,44 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap&subset=korean"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,500&display=swap&subset=korean"
+    rel="stylesheet">
+
+  <!-- favicon-->
+  <link rel="icon" type="image/png" sizes="96x96" href="{% static 'img/favicon-96x96.png' %}">
+
+  <!-- axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>영화추천사이트</title>
+</head>
+<body>
+  {% include '_nav.html' %}
+
+  <header>
+    <a name="top"></a>
+    <h2 class="title nanum-myeongjo">영화를<br>추천해<br>줄게요</h2>
+  </header>
+
+  {% block body %}
+  {% endblock %}
+
+</body>
+</html>
